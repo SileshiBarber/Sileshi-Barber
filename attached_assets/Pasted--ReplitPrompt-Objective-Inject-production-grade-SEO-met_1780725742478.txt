@@ -1,0 +1,26 @@
+<ReplitPrompt>
+### Objective
+Inject production-grade SEO meta tags, Open Graph protocols, performance optimization layers, and rigorous accessibility enhancements into the header and body architecture of `/index.html`.
+
+### Target Files
+- Modify `/index.html` (Inject comprehensive head tags, semantic corrections, and image attributes)
+- Modify `/js/app.js` (Verify clean window loading hooks and passive scroll performance)
+
+### Technical Specifications & Optimization Blueprint
+1. **Pristine Meta Architecture (Inside `<head>`):**
+   - **Primary Title:** `Sileshi Barbershop | Best Fades & Men's Haircuts in Footscray`
+   - **Meta Description:** `Sileshi Barbershop at 151 Trugo La, Footscray VIC. Highly-rated local barber specializing in skin fades, beard trims, and razor-sharp line-ups. Open until 9 PM. Walk-ins welcome!`
+   - **Keywords Tag:** `barber footscray, sileshi barbershop, skin fade melbourne, hair cut trugo lane, mens grooming footscray`
+   - **Canonical Tag:** `<link rel="canonical" href="https://sileshibarbershop.com.au/" />` (Or a placeholder to prevent duplicate URL parameters from clipping crawling authority).
+2. **Social Graph Implementations (Open Graph & Twitter Cards):**
+   - Add explicit `og:type` (website), `og:title`, `og:description`, `og:url`, and an `og:image` path targeting our high-impact Unsplash Hero asset.
+   - Mirror these properties cleanly into `twitter:card` (summary_large_image) attributes to ensure that when text links are shared across messaging apps, it pulls a stunning rich preview.
+3. **Accessibility (a11y) & Performance Compliance:**
+   - Audit all structural images in the Hero, About, and Gallery sections to ensure they have explicit, descriptive `alt` tags (e.g., `alt="Precision skin fade haircut at Sileshi Barbershop Footscray"`).
+   - Ensure all interactive button paths have explicit text descriptors or `aria-label` settings (e.g., `aria-label="Call Sileshi Barbershop directly to check wait times"`).
+   - Verify that body background and text ratios maintain crisp contrast profiles.
+4. **Script Performance Tuning (`/js/app.js`):**
+   - Ensure all scroll event listeners linked to the navigation bar fading systems utilize a passive flag configuration (`{ passive: true }`) to completely eliminate scroll lag on mobile devices.
+
+Execute this optimization pass perfectly. Ensure the head structure remains highly organized and clean.
+</ReplitPrompt>

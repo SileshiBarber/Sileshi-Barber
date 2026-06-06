@@ -20,7 +20,7 @@ export function Hero({ onOpenBooking }: Props) {
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1920&q=80"
-          alt="Sileshi Barbershop Interior"
+          alt="Precision skin fade haircut at Sileshi Barbershop Footscray"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0B0C10] via-[#0B0C10]/80 to-transparent" />

@@ -36,7 +36,7 @@ export function About() {
           >
             <img
               src="https://images.unsplash.com/photo-1593702295094-aea22597af65?auto=format&fit=crop&w=800&q=80"
-              alt="Sileshi Barbershop — Footscray"
+              alt="Sileshi Barbershop interior — premium barbershop on Trugo Lane, Footscray"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
 

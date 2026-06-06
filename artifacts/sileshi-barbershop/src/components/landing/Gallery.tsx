@@ -5,19 +5,19 @@ import { X, ZoomIn } from "lucide-react";
 const images = [
   {
     src: "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=600&q=80",
-    label: "Skin Fade Close-up",
+    label: "Skin fade close-up at Sileshi Barbershop Footscray",
   },
   {
     src: "https://images.unsplash.com/photo-1512864084360-7c0c4d0a0845?auto=format&fit=crop&w=600&q=80",
-    label: "Classic Scissors Work",
+    label: "Classic scissors work by Sileshi Barbershop barber",
   },
   {
     src: "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=80",
-    label: "Beard Detailing & Line-Up",
+    label: "Beard detailing and line-up at Sileshi Barbershop",
   },
   {
     src: "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=600&q=80",
-    label: "Shop Atmosphere",
+    label: "Sileshi Barbershop atmosphere and interior, Footscray",
   },
 ];
 
