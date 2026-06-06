@@ -1,0 +1,33 @@
+<ReplitPrompt>
+### Objective
+Build a premium, high-conversion Hero Section and an intelligent, live-updating Operating Hours Banner directly below the navigation bar inside `/index.html`. Wire up the real-time business logic inside `/js/app.js`.
+
+### Target Files
+- Modify `/index.html` (Inject Hero and Hours components into `<main>`)
+- Modify `/js/app.js` (Add dynamic time and open/closed operational status logic)
+- Modify `/css/styles.css` (Add high-end visual effect utilities if needed)
+
+### Technical Specifications & UI Design
+1. **The Live Hours Banner (`#status-banner`):**
+   - Positioned immediately below the sticky navigation.
+   - Background: Pitch black or dark slate with a subtle amber/gold accent border.
+   - Content: Displays the address, phone number, and a **Live Operating Status Indicator** containing a pulsing dot (Green for Open, Red for Closed).
+2. **The Hero Section (`#hero`):**
+   - Minimum height of `85vh` on mobile, `90vh` on desktop.
+   - **Background Design:** Use a rich, dark CSS overlay gradient (`from-[#0B0C10] via-[#0B0C10]/80 to-transparent`) masking a high-quality Unsplash urban barbershop background image (use a pristine placeholder URL like `https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1920&q=80`).
+   - **Typography & Copy:**
+     - Over-title: "FOOTSCRAY'S PREMIUM FRESH FADES" in tracked-out, bold gold text (`text-[#C5A059] tracking-widest text-xs uppercase`).
+     - Main H1: "Sileshi Barbershop" followed by a high-impact sub-headline: "Sharp Cuts. Elite Detail. No Compromises."
+   - **Primary Action Zone (Mobile Optimization):**
+     - Two prominent, stacked buttons on mobile (row on desktop):
+       1. **Primary CTA:** "Call to Book / Check Wait Times" (`bg-[#C5A059] text-black font-bold px-8 py-4 rounded-md shadow-lg shadow-[#C5A059]/20 hover:bg-[#b38f4b] transition-all flex items-center justify-center gap-2`). This must link directly to `tel:0431552770`.
+       2. **Secondary CTA:** "View Services & Pricing" (`border border-white/20 bg-white/5 backdrop-blur-sm text-white px-8 py-4 rounded-md hover:bg-white/10 transition-all text-center`). Links smoothly to `#services`.
+   - **Social Proof Snippet:** Embed a micro-badge within the hero showcasing `4.8 ★★★★★ (52 Google Reviews)` so trust is instant.
+
+### Component Logic Implementation (`/js/app.js`)
+- Add a JavaScript function that runs on page load to dynamically calculate if Sileshi Barbershop is open or closed based on local Melbourne time (AEST/AEDT).
+- **Business Hours Rules:** The shop closes at 9:00 PM every day. Assume standard opening at 9:00 AM.
+- The script must find the element `#live-status`, inject the text "OPEN NOW (Closes 9 PM)" or "CLOSED NOW", and toggle a pulsing green circle (`bg-emerald-500 animate-pulse`) or static red circle (`bg-rose-500`) accordingly.
+
+Execute this layout update flawlessly. Keep Tailwind utility layout classes clean, ultra-sharp, and completely mobile-responsive.
+</ReplitPrompt>
