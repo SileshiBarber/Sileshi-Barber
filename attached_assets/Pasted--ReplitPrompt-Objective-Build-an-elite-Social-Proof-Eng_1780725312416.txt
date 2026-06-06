@@ -1,0 +1,30 @@
+<ReplitPrompt>
+### Objective
+Build an elite Social Proof Engine and Testimonials section inside `/index.html` under the section ID `#reviews`. Design a responsive, multi-column grid layout that showcases authentic real-world customer reviews with premium typography and star ratings.
+
+### Target Files
+- Modify `/index.html` (Inject the Reviews/Testimonials component)
+- Modify `/css/styles.css` (Add elegant fade or hover state micro-shadow adjustments)
+
+### Technical Specifications & UI Design
+1. **Section Architecture (`#reviews`):**
+   - Background: Deep Slate (`bg-[#1F2833]`) to offset the obsidian tones.
+   - Layout: A dynamic, responsive flex/grid array (`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6`) that automatically realigns nicely on smaller devices.
+2. **Section Header Styling:**
+   - Over-title: "CUSTOMER TESTIMONIALS" in tracked-out gold (`text-[#C5A059] tracking-widest text-xs uppercase block mb-2 text-center`).
+   - Main Title: "4.8 Stars from 52 Local Reviews" with a massive, inline five-star gold layout (`★★★★★`).
+3. **Review Card Component Architecture:**
+   - Background: Dark Obsidian (`bg-[#0B0C10]`), framed with a crisp border line (`border border-white/5 p-6 rounded-xl relative flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:border-[#C5A059]/30`).
+   - **Review Data (Using the actual business inputs):**
+     - *Card 1 Quote:* "Excellent service, good price and quality." — Style the text as an italicized, prominent body element.
+     - *Card 2 Quote:* "Needed an urgent cut for my boy and they pulled through 🙌🏽 Awsome and affordable" — Highlight the local, fast, accommodating aspect.
+     - *Card 3 Quote:* "Too late to upload photos but I highly recommend this place!" — Emphasize the strong recommendation factor.
+     - *Card 4 (Synthetic but grounded in profile metrics):* "The best zero fade in Footscray. Walked right in, sharp lines, great atmosphere. Highly recommended."
+   - **Card Inner Details:**
+     - A row of 5 solid gold stars (`text-[#C5A059] text-sm flex mb-3`).
+     - A verified customer badge structure (e.g., "Google Reviewer • Verified Local").
+4. **Bottom Social Anchor Callout:**
+   - Below the cards grid, place a clean, centered micro-layout that says: "Been to Sileshi Barbershop?" with a direct link button titled "Leave a 5-Star Review" linking out cleanly to open up trust signals.
+
+Ensure all card layouts render uniformly, preventing text truncation or layout breaks on narrow screens.
+</ReplitPrompt>
