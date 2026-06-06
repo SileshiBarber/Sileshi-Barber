@@ -1,0 +1,29 @@
+<ReplitPrompt>
+### Objective
+Build a beautiful, high-contrast Location, Access, and Hours section inside `/index.html` under the section ID `#location`. Integrate a fully responsive embedded map layout, quick-action direction triggers, and load the local business schema injection engine.
+
+### Target Files
+- Modify `/index.html` (Inject Location, Maps, and Directions panel)
+- Modify `/js/app.js` (Inject the script that dynamically appends the JSON-LD schema)
+
+### Technical Specifications & UI Design
+1. **Section Architecture (`#location`):**
+   - Background: Dark Obsidian (`bg-[#0B0C10]`) with a subtle top border to create a sleek transition from the services block.
+   - Layout: Two-column grid on desktop (`grid-cols-1 lg:grid-cols-2 gap-12`), stacked vertically on mobile screens.
+2. **Left Column: Physical Access & Hours Card:**
+   - **Visuals:** Deep Slate backdrop (`bg-[#1F2833]`), clean gold accents, rounded borders, and soft inner shadows (`p-8 rounded-2xl border border-white/5`).
+   - **Content Elements:**
+     - Title: "Visit the Shop" with a crisp icon (e.g., location pin).
+     - Address Display: "151 Trugo La, Footscray VIC 3011" stylized with clean, large text.
+     - Direct CTA: "Get Driving Directions" link styled as a button (`bg-white/5 border border-white/10 text-white py-3 px-6 rounded-md hover:bg-white/10 transition-all flex items-center justify-center gap-2 mb-6`). Use a universal Google Maps directions link: `https://www.google.com/maps/dir/?api=1&destination=151+Trugo+La+Footscray+VIC+3011`.
+     - Static Hours Schedule Table: A highly clean, grid-based presentation listing Monday through Sunday operational hours clearly reflecting "Closes 9 PM".
+3. **Right Column: Embedded Map Canvas:**
+   - Instead of a generic raw iframe, wrap the map in a high-end container frame (`overflow-hidden rounded-2xl border border-white/10 h-[350px] md:h-full min-h-[350px] shadow-2xl relative`).
+   - Use a clean, highly reliable Google Maps Embed URL pointing precisely to the location: `https://maps.google.com/maps?q=151%20Trugo%20La,%20Footscray%20VIC%203011&t=&z=15&ie=UTF8&iwloc=&output=embed`. Ensure the iframe parameters include `width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"`. Apply a subtle CSS filter or container tint matching the dark theme if possible, without impacting legibility.
+
+### Script Automation (`/js/app.js`)
+- Write an automated execution sequence that reads the contents or keys of `/js/schema.json` (created in Prompt 1) or directly creates a `<script type="application/ld+json">` element on page execution. 
+- Ensure the JSON-LD payload is properly stringified and appended to the document's `<head>` to satisfy Google Lighthouse SEO crawlers immediately.
+
+Verify the container sizing is fluid and perfectly adapts to narrow phone screens.
+</ReplitPrompt>
