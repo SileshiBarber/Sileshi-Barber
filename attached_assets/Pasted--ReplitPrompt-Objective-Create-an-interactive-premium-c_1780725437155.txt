@@ -1,0 +1,26 @@
+<ReplitPrompt>
+### Objective
+Create an interactive, premium client-side Booking/Inquiry Modal Form inside `/index.html` anchored to a modal toggle system wired up cleanly in `/js/app.js`. 
+
+### Target Files
+- Modify `/index.html` (Inject the modal structure at the root body level and update Hero/Nav CTA links to toggle it)
+- Modify `/js/app.js` (Implement modal open/close logic and client-side time-validation engine)
+
+### Technical Specifications & UI Design
+1. **The Modal Overlay Framework (`#booking-modal`):**
+   - Backdrop: High-end frosted glass blur overlay (`fixed inset-0 bg-[#0B0C10]/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden opacity-0 transition-opacity duration-300`).
+   - Modal Container: Sleek Obsidian surface (`bg-[#1F2833] text-white rounded-2xl border border-white/10 w-full max-w-lg overflow-hidden shadow-2xl scale-95 transition-transform duration-300`).
+2. **Form Architecture & Input Fields:**
+   - Header: A bold title "Request Your Slot" with a prominent, close button (`✕`) in the top corner.
+   - **Fields Grid:**
+     - Full Name (`input type="text"` with deep dark background and subtle focus rings).
+     - Phone Number (`input type="tel"` — critical for text follow-ups).
+     - Service Selection Dropdown (`select` element pre-populated with options matching our Menu: Skin Fade, Beard Trim, Combo, etc.).
+     - Date & Time Pickers: Designed beautifully with clear micro-labels.
+3. **Smart Time Validation & UX Logic (`/js/app.js`):**
+   - Bind global event click handlers to any button with the class `.open-booking` to toggle the modal's hidden state, gracefully animating `opacity-100` and `scale-100`.
+   - Write form-level validation: If a user selects a time past 9:00 PM, intercept the submission event, prevent default behavior, and display a sleek, integrated error banner stating: "Sileshi Barbershop closes at 9:00 PM. Please select an earlier slot."
+   - On successful validation, simulate a premium, interactive "Request Sent!" state that replaces the form fields with a confirmation checkmark and a prompt to click to call `0431 552 770` for instant walk-in confirmations.
+
+Ensure all input fields display beautifully on touch screens with natural keyboard spacing layout designs.
+</ReplitPrompt>

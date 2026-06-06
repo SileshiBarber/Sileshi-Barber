@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
-import { Phone, ChevronDown, Star } from "lucide-react";
+import { Phone, ChevronDown, Star, Calendar } from "lucide-react";
 
-export function Hero() {
+interface Props {
+  onOpenBooking: () => void;
+}
+
+export function Hero({ onOpenBooking }: Props) {
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth" });
@@ -93,21 +97,22 @@ export function Hero() {
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
+            <button
+              onClick={onOpenBooking}
+              data-testid="button-hero-book"
+              className="flex items-center justify-center gap-2 bg-[#C5A059] text-black font-bold px-8 py-4 rounded-md shadow-lg shadow-[#C5A059]/20 hover:bg-[#b38f4b] transition-all w-full sm:w-auto text-base"
+            >
+              <Calendar className="w-4 h-4 shrink-0" />
+              Book Now
+            </button>
             <a
               href="tel:+61431552770"
               data-testid="button-call-to-book"
-              className="flex items-center justify-center gap-2 bg-[#C5A059] text-black font-bold px-8 py-4 rounded-md shadow-lg shadow-[#C5A059]/20 hover:bg-[#b38f4b] transition-all w-full sm:w-auto text-base"
+              className="flex items-center justify-center gap-2 border border-white/20 bg-white/5 backdrop-blur-sm text-white px-8 py-4 rounded-md hover:bg-white/10 transition-all w-full sm:w-auto text-base font-semibold"
             >
               <Phone className="w-4 h-4 shrink-0" />
-              Call to Book / Check Wait Times
+              Call 0431 552 770
             </a>
-            <button
-              onClick={() => scrollTo("services")}
-              data-testid="button-view-services"
-              className="border border-white/20 bg-white/5 backdrop-blur-sm text-white px-8 py-4 rounded-md hover:bg-white/10 transition-all text-center w-full sm:w-auto text-base font-semibold"
-            >
-              View Services &amp; Pricing
-            </button>
           </motion.div>
         </motion.div>
 
