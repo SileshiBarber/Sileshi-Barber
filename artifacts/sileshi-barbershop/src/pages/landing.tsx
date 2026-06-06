@@ -4,6 +4,7 @@ import { StatusBanner } from "@/components/landing/StatusBanner";
 import { Hero } from "@/components/landing/Hero";
 import { Services } from "@/components/landing/Services";
 import { About } from "@/components/landing/About";
+import { Gallery } from "@/components/landing/Gallery";
 import { Reviews } from "@/components/landing/Reviews";
 import { Location } from "@/components/landing/Location";
 import { Footer } from "@/components/landing/Footer";
@@ -20,6 +21,7 @@ export default function LandingPage() {
         <Hero onOpenBooking={() => setBookingOpen(true)} />
         <Services />
         <About />
+        <Gallery />
         <Reviews />
         <Location />
       </main>

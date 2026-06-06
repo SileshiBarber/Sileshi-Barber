@@ -1,0 +1,29 @@
+<ReplitPrompt>
+### Objective
+Build an elite Visual Gallery Grid inside `/index.html` under the section ID `#gallery`. Implement a highly responsive masonry or modern grid asset array that displays structural shop cuts, styles, and interior atmosphere with seamless hover actions.
+
+### Target Files
+- Modify `/index.html` (Inject the Gallery section structure)
+- Modify `/css/styles.css` (Add high-end visual scaling effects)
+- Modify `/js/app.js` (Add a lightweight lightbox or zoom modal trigger system)
+
+### Technical Specifications & UI Design
+1. **Section Architecture (`#gallery`):**
+   - Background: Deep Slate (`bg-[#1F2833]`) to contrast beautifully against the obsidian background of the About section.
+   - Layout: A dynamic grid layout changing dynamically based on viewport (`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4`).
+2. **Section Headers:**
+   - Over-title: "OUR CRAFT VISUALIZED" in tracked-out gold (`text-[#C5A059] tracking-widest text-xs uppercase block mb-2 text-center`).
+   - Title: "Fresh Fades & Elite Precision" (`text-3xl md:text-4xl font-extrabold text-white text-center mb-12`).
+3. **Gallery Asset Array (High-Resolution Curated Mockups):**
+   - Implement 4-6 curated asset slots featuring modern barbershop imagery. Use crisp, high-performing image links:
+     - *Slot 1 (Skin Fade Close-up):* `https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=600&q=80`
+     - *Slot 2 (Classic Scissors Work):* `https://images.unsplash.com/photo-1512864084360-7c0c4d0a0845?auto=format&fit=crop&w=600&q=80`
+     - *Slot 3 (Beard Detailing & Line-Up):* `https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=80`
+     - *Slot 4 (Shop Atmosphere / Interior Vibe):* `https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=600&q=80`
+4. **Interaction Styles & Lightbox Effect (`/js/app.js`):**
+   - Wrap each image inside a container with `overflow-hidden rounded-xl border border-white/5 dynamic-shadow aspect-square relative group cursor-pointer`.
+   - Apply a transition rule: On hover, the image scales smoothly (`group-hover:scale-110 transition-transform duration-500`) and a subtle gold tint overlay fades in (`bg-[#C5A059]/10 opacity-0 group-hover:opacity-100 transition-opacity`).
+   - Add a lightweight event listener in `app.js` so clicking a gallery item reveals a fullscreen, overlay image presentation layer that can be closed instantly with a click anywhere outside the graphic.
+
+Ensure image rendering loads smoothly across standard mobile connections without slowing down initial page interactivity.
+</ReplitPrompt>
