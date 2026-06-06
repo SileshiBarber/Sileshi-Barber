@@ -1,0 +1,14 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "Dj40wf_-nZ_4dWzCYRUsz"
+uri = "file://artifacts/sileshi-barbershop/public/images/hero-bg.png"
+type = "image"
+title = "Barbershop dark hero interior"
+
+[[generated]]
+id = "hvL7o526mXYuAeLvqwAhn"
+uri = "file://artifacts/sileshi-barbershop/public/images/about-barber.png"
+type = "image"
+title = "Skilled barber working portrait"

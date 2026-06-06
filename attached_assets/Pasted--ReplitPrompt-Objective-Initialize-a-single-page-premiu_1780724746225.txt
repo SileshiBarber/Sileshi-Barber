@@ -1,0 +1,43 @@
+<ReplitPrompt>
+### Objective
+Initialize a single-page, premium, mobile-first web app for "Sileshi Barbershop" located in Footscray. Create a modular, highly scalable, and clean file structure using HTML5, Tailwind CSS via CDN, and vanilla JavaScript. Avoid generic templates; build an agency-grade "urban premium" aesthetic with a dark/obsidian palette, amber accents, and ultra-crisp typography.
+
+### File Tree Targets
+- Create `/index.html` (The primary entry point and layout shell)
+- Create `/css/styles.css` (Custom Tailwind overrides and utility setups)
+- Create `/js/app.js` (Core interaction engine)
+- Create `/js/schema.json` (Local Business Structured Data Template)
+
+### Technical Specifications & Design Tokens
+1. **Color Palette:** 
+   - Backgrounds: Dark Obsidian (`bg-[#0B0C10]`), Deep Slate (`bg-[#1F2833]`)
+   - Accents: Sharp Amber/Gold (`text-[#C5A059]`, `bg-[#C5A059]`), Pure White (`text-[#FFFFFF]`), Muted Gray (`text-[#C5C6C7]`)
+2. **Typography:** Sans-serif clean look. Inter or Montserrat-style weighting.
+3. **Core Shell Features:**
+   - A fully responsive, premium Sticky Navigation Bar featuring the shop name, links to Services, Reviews, Location, and a high-visibility, primary mobile Click-to-Call button (`0431 552 770`).
+   - A modern responsive Mobile Hamburger Menu that smoothly toggles via vanilla JavaScript without layout shifting.
+   - An agency-grade Footer featuring operational status, address ("151 Trugo La, Footscray VIC 3011"), quick links, copyright, and immediate conversion access hooks.
+
+### Component Code Implementations
+
+#### index.html Structure:
+- Include HTML5 boilerplate.
+- Link Tailwind CSS CDN v3.4+ and FontAwesome/Lucide Icons for crisp asset delivery.
+- Set up `<nav id="main-nav" class="fixed top-0 w-full z-50 transition-all duration-300 bg-[#0B0C10]/90 backdrop-blur-md border-b border-white/5">`
+- Add structural containers `<main>` and placeholder sections matching the roadmap for seamless future injections.
+- Hook up `js/app.js` right before the closing `</body>` tag.
+
+#### js/app.js Implementation:
+- Write a clean script that monitors scroll position to add a glass-morphic background shadow depth shift to `#main-nav`.
+- Implement a lightweight event listener for the mobile hamburger toggle that opens/closes the nav tray cleanly with a simple slide/fade transition class.
+
+#### js/schema.json Baseline:
+- Draft a pristine `LocalBusiness` JSON-LD schema containing:
+  - Name: "Sileshi Barbershop"
+  - Telephone: "+61431552770"
+  - Address: Street: "151 Trugo La", Locality: "Footscray", Region: "VIC", PostalCode: "3011", Country: "AU"
+  - PriceRange: "$$"
+  - GeoCoordinates: Latitude and longitude placeholders for Footscray.
+
+Execute this setup completely. Ensure no placeholders break the HTML structure. Ensure Tailwind classes are implemented explicitly on the nav and footer to project a premium luxury feel immediately.
+</ReplitPrompt>

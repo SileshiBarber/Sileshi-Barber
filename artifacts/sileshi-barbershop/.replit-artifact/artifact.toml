@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Sileshi Barbershop"
+version = "1.0.0"
+id = "artifacts/sileshi-barbershop"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25345
+
+[services.development]
+run = "pnpm --filter @workspace/sileshi-barbershop run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/sileshi-barbershop", "run", "build" ]
+publicDir = "artifacts/sileshi-barbershop/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25345"
+BASE_PATH = "/"
