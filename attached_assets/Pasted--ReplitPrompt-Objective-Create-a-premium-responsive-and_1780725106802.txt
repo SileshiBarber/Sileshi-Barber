@@ -1,0 +1,26 @@
+<ReplitPrompt>
+### Objective
+Create a premium, responsive, and highly legible Service Menu and Pricing Matrix component inside `/index.html` under a `#services` section ID, complete with hover state scaling and clean pricing layouts.
+
+### Target Files
+- Modify `/index.html` (Inject the Services Component)
+- Modify `/js/app.js` (Optional dynamic tab handling or interactive price highlight states)
+
+### Technical Specifications & UI Design
+1. **Section Architecture (`#services`):**
+   - Background: Deep Slate (`bg-[#1F2833]`) to break up the page rhythm from the pure black hero.
+   - Layout: Clean vertical layout on mobile, transitioning into a multi-column balanced distribution grid on desktop.
+2. **Typography & Styling:**
+   - Section Accent Header: "THE MENU" tracking out cleanly in gold (`text-[#C5A059] tracking-widest text-xs uppercase block mb-2 text-center`).
+   - Section Title: "Premium Cuts & Grooming Services" (`text-3xl md:text-4xl font-extrabold text-white text-center mb-12`).
+3. **Menu Categorization & Pricing Layout:**
+   - Group services cleanly into distinct blocks using an modern, elegant dotted-line separator style (where the service name is left-aligned, a subtle dotted line spans the gap, and the price is right-aligned in bright gold text).
+   - **Service List Data:**
+     - *Haircuts:* Standard Haircut, Skin Fade / Zero Fade, Buzz Cut, Buzz Cut + Line Up.
+     - *Beard & Detailing:* Beard Trim & Line Up, Hot Towel Shave, Haircut + Beard Trim Combo (highlight this with a subtle "Best Value" border/badge using `border-[#C5A059]/40 bg-[#0B0C10]/40`), Kids/Students Cuts (Include a subtle note pointing out special student pricing of $14.99 if applicable, or generic "Affordable Rates").
+4. **Interactive Features & UX Enhancements:**
+   - Every single service item layout should have a responsive hover state (`hover:bg-white/5 p-3 rounded-lg transition-all duration-200 cursor-default`) that scales the price text slightly or shifts its color shade to create a high-end application experience.
+   - Include a secondary sticky call-to-action anchor button at the base of the services grid reading "Need a Quick Cut? Call for Wait Times" linking explicitly to `tel:0431552770`.
+
+Implement this structure completely with perfect visual parity on both iOS Safari, Android Chrome, and desktop screens. Avoid using generic unstyled lists.
+</ReplitPrompt>
