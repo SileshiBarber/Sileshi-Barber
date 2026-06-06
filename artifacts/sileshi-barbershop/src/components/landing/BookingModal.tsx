@@ -210,7 +210,7 @@ export function BookingModal({ isOpen, onClose }: Props) {
                     <button
                       type="submit"
                       data-testid="button-booking-submit"
-                      className="w-full bg-[#C5A059] hover:bg-[#b38f4b] text-black font-bold py-4 rounded-lg transition-all duration-200 text-sm tracking-wide shadow-lg shadow-[#C5A059]/20 mt-1"
+                      className="w-full bg-[#C5A059] hover:bg-[#b38f4b] hover:scale-[1.02] active:scale-[0.98] text-black font-bold py-4 rounded-lg transition-all duration-150 text-sm tracking-wide shadow-lg shadow-[#C5A059]/20 mt-1"
                     >
                       Send Booking Request
                     </button>

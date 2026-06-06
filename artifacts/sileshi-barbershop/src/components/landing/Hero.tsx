@@ -100,7 +100,7 @@ export function Hero({ onOpenBooking }: Props) {
             <button
               onClick={onOpenBooking}
               data-testid="button-hero-book"
-              className="flex items-center justify-center gap-2 bg-[#C5A059] text-black font-bold px-8 py-4 rounded-md shadow-lg shadow-[#C5A059]/20 hover:bg-[#b38f4b] transition-all w-full sm:w-auto text-base"
+              className="flex items-center justify-center gap-2 bg-[#C5A059] text-black font-bold px-8 py-4 rounded-md shadow-lg shadow-[#C5A059]/20 hover:bg-[#b38f4b] hover:scale-[1.02] active:scale-[0.98] transition-all duration-150 w-full sm:w-auto text-base"
             >
               <Calendar className="w-4 h-4 shrink-0" />
               Book Now
@@ -108,7 +108,8 @@ export function Hero({ onOpenBooking }: Props) {
             <a
               href="tel:+61431552770"
               data-testid="button-call-to-book"
-              className="flex items-center justify-center gap-2 border border-white/20 bg-white/5 backdrop-blur-sm text-white px-8 py-4 rounded-md hover:bg-white/10 transition-all w-full sm:w-auto text-base font-semibold"
+              aria-label="Call Sileshi Barbershop directly to check wait times"
+              className="flex items-center justify-center gap-2 border border-white/20 bg-white/5 backdrop-blur-sm text-white px-8 py-4 rounded-md hover:bg-white/10 hover:scale-[1.02] active:scale-[0.98] transition-all duration-150 w-full sm:w-auto text-base font-semibold"
             >
               <Phone className="w-4 h-4 shrink-0" />
               Call 0431 552 770

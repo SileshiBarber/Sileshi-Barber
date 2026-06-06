@@ -1,0 +1,24 @@
+<ReplitPrompt>
+### Objective
+Execute the final production polish, apply high-end micro-animations, tune interaction states, and run a comprehensive script pass to ensure the site is flawless, interactive, and completely ready for launch.
+
+### Target Files
+- Modify `/index.html` (Final structural QA pass, layout check)
+- Modify `/css/styles.css` (Inject smooth scroll and premium animation utility classes)
+- Modify `/js/app.js` (Inject dynamic footer date, scroll triggers, and mobile tap optimization)
+
+### Technical Specifications & Final Polish Blueprint
+1. **Premium Global Styles (`/css/styles.css`):**
+   - Apply global smooth scrolling to the HTML element: `html { scroll-behavior: smooth; }`.
+   - Add a custom CSS utility for modern link underlining on hover: an elegant border or underline that expands gracefully from the center outwards (`transition-all duration-300`).
+   - Eliminate any blue mobile selection highlights on clickable buttons by applying `-webkit-tap-highlight-color: transparent;`.
+2. **Dynamic UI Polish & Micro-interactions (`/js/app.js`):**
+   - **Automated Copyright Year:** Write a quick script that finds the copyright placeholder in the footer and dynamically injects the current year (2026) so the site never looks outdated.
+   - **Smooth Navigation Trapping:** Ensure that clicking any link in the sticky header or footer smoothly rolls the user to the correct section (`#services`, `#location`, `#reviews`, `#about`) and automatically closes the mobile hamburger menu overlay if it is currently open.
+   - **Button Hover Elevation:** Add brief CSS class bindings or ensure Tailwind states (`hover:scale-[1.02] active:scale-[0.98] transition-all`) are perfectly continuous on all Call-to-Action buttons to make them feel highly responsive when tapped on phone screens.
+3. **Rigorous Quality Assurance Check:**
+   - Verify that all absolute links, phone numbers (`tel:0431552770`), and driving map paths operate seamlessly.
+   - Double-check that the live-updating operational hours indicator doesn't throw console errors and perfectly updates its status classes based on the daily schedules.
+
+Execute this final optimization sequence. Ensure all code blocks are cleanly closed, error-free, and optimized for instant production hosting.
+</ReplitPrompt>
