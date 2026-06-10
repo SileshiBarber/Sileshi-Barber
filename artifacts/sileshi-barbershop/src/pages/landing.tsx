@@ -1,9 +1,8 @@
 import { Navbar } from "@/components/landing/Navbar";
 import { StatusBanner } from "@/components/landing/StatusBanner";
 import { Hero } from "@/components/landing/Hero";
-import { Services } from "@/components/landing/Services";
-import { About } from "@/components/landing/About";
 import { Gallery } from "@/components/landing/Gallery";
+import { Services } from "@/components/landing/Services";
 import { Reviews } from "@/components/landing/Reviews";
 import { Location } from "@/components/landing/Location";
 import { Footer } from "@/components/landing/Footer";
@@ -15,9 +14,8 @@ export default function LandingPage() {
       <StatusBanner />
       <main className="flex-1">
         <Hero />
-        <Services />
-        <About />
         <Gallery />
+        <Services />
         <Reviews />
         <Location />
       </main>

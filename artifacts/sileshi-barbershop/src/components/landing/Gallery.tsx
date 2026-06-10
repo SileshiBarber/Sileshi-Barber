@@ -155,6 +155,11 @@ export function Gallery() {
           </p>
         </div>
       </div>
+
+      {/* Gold divider into Services */}
+      <div className="mt-16 mx-auto max-w-3xl px-4 md:px-6">
+        <div className="h-px bg-gradient-to-r from-transparent via-[#C5A059]/60 to-transparent" />
+      </div>
     </section>
   );
 }
