@@ -111,7 +111,7 @@ export function Hero() {
               className="flex items-center justify-center gap-2 bg-[#C5A059] text-black font-bold px-8 py-4 rounded-md shadow-lg shadow-[#C5A059]/20 hover:bg-[#b38f4b] hover:scale-[1.02] active:scale-[0.98] transition-all duration-150 w-full sm:w-auto text-base"
             >
               <Phone className="w-4 h-4 shrink-0" />
-              Check Wait Times — 0431 552 770
+              Call Now — 0431 552 770
             </a>
             <button
               onClick={() => scrollTo("services")}

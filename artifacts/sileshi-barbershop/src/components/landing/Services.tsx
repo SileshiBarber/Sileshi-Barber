@@ -144,7 +144,7 @@ export function Services() {
             className="flex items-center gap-2.5 bg-[#C5A059] text-black font-bold px-7 py-3.5 rounded-md hover:bg-[#b38f4b] hover:scale-[1.02] active:scale-[0.98] transition-all duration-150 text-sm tracking-wide shadow-lg shadow-[#C5A059]/20"
           >
             <Phone className="w-4 h-4 shrink-0" />
-            Check Wait Times — 0431 552 770
+            Call Now — 0431 552 770
           </a>
         </motion.div>
       </div>

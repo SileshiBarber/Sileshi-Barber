@@ -78,7 +78,7 @@ export function Navbar() {
             className="flex items-center gap-2 bg-[#C5A059] text-black font-bold px-5 py-2.5 rounded-md hover:bg-[#b38f4b] hover:scale-[1.02] active:scale-[0.98] transition-all duration-150 text-sm shadow-lg shadow-[#C5A059]/20"
           >
             <Phone className="w-4 h-4" />
-            Check Wait Times
+            Call Now
           </a>
         </nav>
 
@@ -129,7 +129,7 @@ export function Navbar() {
               className="flex items-center gap-2 text-[#C5A059] font-semibold py-3 text-sm mt-1"
             >
               <Phone className="w-4 h-4" />
-              0431 552 770 — Check Wait Times
+              0431 552 770 — Call Now
             </a>
           </motion.div>
         )}
