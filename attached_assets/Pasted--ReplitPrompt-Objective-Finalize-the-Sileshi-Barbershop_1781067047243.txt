@@ -1,0 +1,42 @@
+<ReplitPrompt>
+### Objective
+Finalize the Sileshi Barbershop website by pivoting to a "Walk-ins Only" model, updating the pricing and hours, and implementing a premium touch-enabled Image Slideshow for the shop's custom 10-image gallery.
+
+### Target Files
+- Modify `/index.html` (Update pricing, hours, remove booking buttons, and add slideshow structure)
+- Modify `/js/app.js` (Update operating hours logic and implement simple slideshow controller)
+- Modify `/css/styles.css` (Add slideshow transition effects)
+
+### 1. Pricing & "Walk-ins Only" Pivot
+- **Remove all "Book Now" buttons and the Booking Modal.**
+- Replace all primary CTAs with a high-visibility **"Check Wait Times"** button linking to `tel:0431552770`.
+- **Update Service Menu Section:**
+  - Normal Haircut: **$30**
+  - Haircut + Beard: **$35**
+  - Kids Cut: **$25**
+- Add a prominent "Walk-Ins Only — No Appointment Needed" badge in the Hero and Services sections.
+
+### 2. Operating Hours Update (Static & Logic)
+- **Update Schedule Table in HTML:**
+  - Mon - Sat: 9:00 AM - 8:00 PM
+  - Sun: 11:00 AM - 7:00 PM
+- **Update Logic in `/js/app.js`:**
+  - Modify the `checkStatus` function to reflect the new closing times (8:00 PM Mon-Sat, 7:00 PM Sun) and opening times (11:00 AM Sun).
+  - Ensure the live status banner shows "OPEN NOW" or "CLOSED" based on these new specific parameters.
+
+### 3. Premium 10-Image Gallery Slideshow
+- **HTML Structure:** Replace the static gallery grid with a `#slideshow-container`.
+- **Image Integration:** Create a loop or structure for 10 images. 
+  - *Developer Note:* Set image paths as `/images/1.jpg` through `/images/10.jpg`. (User will upload their files to an `/images/` folder and rename them).
+- **Functionality:** 
+  - Implement a "fade" or "slide" transition.
+  - Include "Next/Prev" arrow overlays and "dot" indicators at the bottom.
+  - Ensure it is **swipe-enabled** for mobile users.
+  - Add an "Auto-play" feature that pauses on hover.
+
+### 4. Layout Final Polish (Header Fix)
+- Ensure the header fix from the previous step is maintained: keep the mobile view extremely clean with the Shop Name, a Phone Icon, and the Hamburger menu on one line.
+- Update the Footer copyright to "2026 Sileshi Barbershop".
+
+Execute these updates precisely. The result should be a clean, high-performance, walk-in focused site that highlights the owner's custom photography.
+</ReplitPrompt>
