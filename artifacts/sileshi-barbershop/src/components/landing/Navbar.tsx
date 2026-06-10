@@ -14,7 +14,6 @@ export function Navbar({ onOpenBooking }: Props) {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
-
       const sections = ["hero", "services", "about", "reviews", "location"];
       const current = sections.find((section) => {
         const el = document.getElementById(section);
@@ -49,20 +48,23 @@ export function Navbar({ onOpenBooking }: Props) {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#0B0C10]/90 backdrop-blur-md border-b border-white/5 shadow-sm py-3"
-          : "bg-transparent py-5"
+          ? "bg-[#0B0C10]/90 backdrop-blur-md border-b border-white/5 shadow-sm"
+          : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
+      {/* Single strict-height row */}
+      <div className="flex items-center justify-between h-14 px-4 md:px-6 w-full container mx-auto">
+
+        {/* Brand — single line, scales down on mobile */}
         <button
           onClick={() => scrollTo("hero")}
-          className="text-[#C5A059] font-black text-xl tracking-tighter uppercase z-50"
           data-testid="button-nav-logo"
+          className="text-[#C5A059] font-black tracking-wider uppercase z-50 text-sm md:text-xl whitespace-nowrap"
         >
           Sileshi <span className="text-white font-light">Barbershop</span>
         </button>
 
-        {/* Desktop Nav */}
+        {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <button
@@ -76,19 +78,18 @@ export function Navbar({ onOpenBooking }: Props) {
               {link.name}
             </button>
           ))}
-
           <button
             onClick={onOpenBooking}
             data-testid="button-nav-book"
-            className="flex items-center gap-2 bg-[#C5A059] text-black font-bold px-5 py-2.5 rounded-md hover:bg-[#b38f4b] transition-all text-sm shadow-lg shadow-[#C5A059]/20"
+            className="flex items-center gap-2 bg-[#C5A059] text-black font-bold px-5 py-2.5 rounded-md hover:bg-[#b38f4b] hover:scale-[1.02] active:scale-[0.98] transition-all duration-150 text-sm shadow-lg shadow-[#C5A059]/20"
           >
             <Calendar className="w-4 h-4" />
             Book Now
           </button>
-
           <a
             href="tel:+61431552770"
             data-testid="link-nav-phone"
+            aria-label="Call Sileshi Barbershop"
             className="flex items-center gap-2 border border-[#C5A059] text-[#C5A059] font-semibold px-4 py-2.5 rounded-md hover:bg-[#C5A059]/10 transition-all text-sm"
           >
             <Phone className="w-4 h-4" />
@@ -96,56 +97,55 @@ export function Navbar({ onOpenBooking }: Props) {
           </a>
         </nav>
 
-        {/* Mobile controls */}
-        <div className="flex items-center gap-3 md:hidden z-50">
+        {/* Mobile controls — Book + Hamburger only */}
+        <div className="flex items-center gap-2 md:hidden z-50">
           <button
             onClick={onOpenBooking}
             data-testid="button-nav-book-mobile"
-            className="flex items-center gap-1.5 bg-[#C5A059] text-black font-bold h-9 px-3 rounded-md text-xs hover:bg-[#b38f4b] transition-all"
+            className="flex items-center gap-1.5 bg-[#C5A059] text-black font-bold h-9 px-4 rounded-md text-xs hover:bg-[#b38f4b] active:scale-[0.97] transition-all"
           >
             <Calendar className="w-3.5 h-3.5" />
             Book
           </button>
-          <a
-            href="tel:+61431552770"
-            data-testid="link-nav-phone-mobile"
-            className="flex items-center gap-1.5 border border-[#C5A059]/60 text-[#C5A059] font-semibold h-9 px-3 rounded-md text-xs hover:bg-[#C5A059]/10 transition-all"
-          >
-            <Phone className="w-3.5 h-3.5" />
-            Call
-          </a>
           <button
-            className="text-white p-1"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             data-testid="button-nav-hamburger"
-            aria-label="Toggle menu"
+            aria-label="Toggle navigation menu"
+            className="text-white p-1.5 rounded-md hover:bg-white/10 transition-colors"
           >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile drawer */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
+            initial={{ opacity: 0, y: -12 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.2 }}
-            className="absolute top-full left-0 right-0 bg-[#0B0C10]/95 backdrop-blur-xl border-b border-white/5 shadow-xl py-6 px-4 flex flex-col gap-5 md:hidden"
+            exit={{ opacity: 0, y: -12 }}
+            transition={{ duration: 0.18 }}
+            className="absolute top-full left-0 right-0 bg-[#0B0C10]/97 backdrop-blur-xl border-b border-white/5 shadow-xl py-5 px-4 flex flex-col gap-1 md:hidden"
           >
             {navLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => scrollTo(link.id)}
-                className={`text-lg font-medium text-left transition-colors ${
+                className={`text-base font-medium text-left py-3 border-b border-white/5 last:border-0 transition-colors ${
                   activeSection === link.id ? "text-[#C5A059]" : "text-white"
                 }`}
               >
                 {link.name}
               </button>
             ))}
+            <a
+              href="tel:+61431552770"
+              className="flex items-center gap-2 text-[#C5A059] font-semibold py-3 text-sm mt-1"
+            >
+              <Phone className="w-4 h-4" />
+              Call 0431 552 770
+            </a>
           </motion.div>
         )}
       </AnimatePresence>

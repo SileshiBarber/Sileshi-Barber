@@ -1,0 +1,26 @@
+<ReplitPrompt>
+### Objective
+Fix the mobile layout overlap bug in the sticky navigation header (`#main-nav`) inside `/index.html`. The header items are currently jumbled and overlapping on small screens. Re-architect the navigation bar to be streamlined, conversion-focused, and perfectly responsive.
+
+### Target Files
+- Modify `/index.html` (Restructure the nav header container classes)
+- Modify `/js/app.js` (Ensure mobile menu toggle matches the updated structure)
+
+### Technical Specifications & Layout Rules for Header
+1. **Mobile Layout (Default / Under 768px):**
+   - **Keep it minimal:** Hide the physical address text, phone number text, and inline sub-elements in the default top bar to save vertical space. 
+   - **Layout Matrix:** The nav should feature just three clear elements on one horizontal row:
+     - Left: The clean brand text `SILESHI BARBERSHOP` (reduced font size on mobile so it doesn't wrap, e.g., `text-base tracking-wider font-bold`).
+     - Center/Right: A compact, high-contrast, primary conversion button (either a small gold "Book" or a phone icon button) targeting the modal or phone line.
+     - Right: The standard mobile hamburger menu icon (`☰`).
+2. **Desktop Layout (`md:` breakpoint and above):**
+   - Bring back the expanded grid: Reveal the address ("151 Trugo La"), phone number, and split button architecture natively.
+3. **The Live Status Banner (`#status-banner`):**
+   - Ensure the live green/red operating status banner sits completely *below* the main navigation header component with proper padding, rather than floating inside the absolute container, preventing any vertical layout stacking or overlap.
+
+### Implementation Checklist
+- Wrap the main branding and core toggles inside a strict Tailwind flex row setup: `flex items-center justify-between h-16 px-4 w-full`.
+- Ensure elements that are too wide for mobile screens have the `hidden md:inline-block` or `hidden md:flex` utility classes applied so they drop out gracefully on mobile viewports.
+
+Execute this layout patch cleanly. Ensure the header remains sharp, glassmorphic, and completely readable on mobile devices without any overlapping text or compressed action items.
+</ReplitPrompt>
