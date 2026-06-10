@@ -1,0 +1,18 @@
+{
+  "visits": 2,
+  "events": [
+    {
+      "event": "page_view",
+      "ts": 1781097201079,
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0",
+      "ref": "http://localhost/"
+    },
+    {
+      "event": "page_view",
+      "ts": 1781097201082,
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0",
+      "ref": "http://localhost/"
+    }
+  ],
+  "serverStartTs": 1781097201079
+}
