@@ -1,0 +1,28 @@
+<ReplitPrompt>
+### Objective
+Implement a lightweight, production-grade backend performance tracking engine and automated email reporting system. The system must collect site metrics and email a consolidated analytical report on the 1st of every month to `david@tykieautomation.com`.
+
+### Technical Architecture Updates
+1. **Backend Env Setup:** Install `express`, `nodemailer`, and `dotenv`. Convert the app workspace into a Node.js/Express backend that serves the frontend static assets.
+2. **Database/Storage:** Use a local, lightweight file-based data store (like a simple `metrics.json` counter engine) or a minimalist key-value store to persist analytics without slowing down page requests.
+3. **Frontend Analytics Hook (`/js/app.js`):**
+   - Track every page load (Site Visit) and log the timestamp.
+   - Implement an automated click-event listener across the page. Capture click events on elements like "Check Wait Times", "Call Shop", "View Services", and specific menu links to calculate "Popular Content & Click Tracking".
+   - Periodically stream these metrics to a background ingestion endpoint via `navigator.sendBeacon` or a non-blocking `fetch('/api/track')` request to keep page loading immediate.
+
+### The Monthly Email Report Engine (`/server/reporter.js`)
+- Write a background cron-job or scheduling sequence using `node-cron` or an interval check that executes on the 1st day of each month.
+- **Email Configurations:** Connect safely using environment variables (`PROCESS.ENV.SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`).
+- **Target Recipient:** `david@tykieautomation.com`
+- **Email Payload & Design:** Send an beautifully styled HTML email template matching the shop's premium aesthetic (Dark Theme, gold highlights) that neatly aggregates:
+  1. **Total Site Visits:** Overall page views for the past 30 days.
+  2. **Running Time (Uptime):** Total server operational uptime percentage tracking.
+  3. **Popular Content:** Ranking lists of the most scrolled-to or viewed modules.
+  4. **Click Tracking:** Exact execution counts for the specific primary telephone call links and direction triggers.
+
+### Security & Optimization
+- Keep all credentials entirely abstracted inside a secure `.env` file. Do not hardcode mail server keys.
+- Ensure the tracker runs asynchronously so client interaction scores stay completely performant.
+
+Execute this full-stack tracking integration cleanly. Provide clear console logs on backend initialization showing that the tracking system and mailer loops are successfully primed.
+</ReplitPrompt>
