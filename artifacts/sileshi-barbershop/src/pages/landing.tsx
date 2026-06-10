@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Navbar } from "@/components/landing/Navbar";
 import { StatusBanner } from "@/components/landing/StatusBanner";
 import { Hero } from "@/components/landing/Hero";
@@ -8,17 +7,14 @@ import { Gallery } from "@/components/landing/Gallery";
 import { Reviews } from "@/components/landing/Reviews";
 import { Location } from "@/components/landing/Location";
 import { Footer } from "@/components/landing/Footer";
-import { BookingModal } from "@/components/landing/BookingModal";
 
 export default function LandingPage() {
-  const [bookingOpen, setBookingOpen] = useState(false);
-
   return (
     <div className="min-h-[100dvh] flex flex-col bg-background selection:bg-primary selection:text-primary-foreground">
-      <Navbar onOpenBooking={() => setBookingOpen(true)} />
+      <Navbar />
       <StatusBanner />
       <main className="flex-1">
-        <Hero onOpenBooking={() => setBookingOpen(true)} />
+        <Hero />
         <Services />
         <About />
         <Gallery />
@@ -26,7 +22,6 @@ export default function LandingPage() {
         <Location />
       </main>
       <Footer />
-      <BookingModal isOpen={bookingOpen} onClose={() => setBookingOpen(false)} />
     </div>
   );
 }

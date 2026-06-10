@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 import { MapPin, Clock, Navigation, Phone } from "lucide-react";
 
 const hours = [
-  { day: "Monday",    open: "9:00 AM", close: "9:00 PM" },
-  { day: "Tuesday",   open: "9:00 AM", close: "9:00 PM" },
-  { day: "Wednesday", open: "9:00 AM", close: "9:00 PM" },
-  { day: "Thursday",  open: "9:00 AM", close: "9:00 PM" },
-  { day: "Friday",    open: "9:00 AM", close: "9:00 PM" },
-  { day: "Saturday",  open: "8:00 AM", close: "9:00 PM" },
-  { day: "Sunday",    open: "10:00 AM", close: "9:00 PM" },
+  { day: "Monday",    open: "9:00 AM", close: "8:00 PM" },
+  { day: "Tuesday",   open: "9:00 AM", close: "8:00 PM" },
+  { day: "Wednesday", open: "9:00 AM", close: "8:00 PM" },
+  { day: "Thursday",  open: "9:00 AM", close: "8:00 PM" },
+  { day: "Friday",    open: "9:00 AM", close: "8:00 PM" },
+  { day: "Saturday",  open: "9:00 AM", close: "8:00 PM" },
+  { day: "Sunday",    open: "11:00 AM", close: "7:00 PM" },
 ];
 
 function getTodayLabel(): string {

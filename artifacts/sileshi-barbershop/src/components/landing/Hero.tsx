@@ -1,11 +1,7 @@
 import { motion } from "framer-motion";
-import { Phone, ChevronDown, Star, Calendar } from "lucide-react";
+import { Phone, ChevronDown, Star } from "lucide-react";
 
-interface Props {
-  onOpenBooking: () => void;
-}
-
-export function Hero({ onOpenBooking }: Props) {
+export function Hero() {
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth" });
@@ -54,10 +50,7 @@ export function Hero({ onOpenBooking }: Props) {
             data-testid="text-hero-heading"
           >
             Sileshi <br />
-            <span
-              className="text-transparent"
-              style={{ WebkitTextStroke: "1px #C5A059" }}
-            >
+            <span className="text-transparent" style={{ WebkitTextStroke: "1px #C5A059" }}>
               Barbershop
             </span>
           </motion.h1>
@@ -67,11 +60,25 @@ export function Hero({ onOpenBooking }: Props) {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.35 }}
-            className="text-lg md:text-xl text-[#C5C6C7] mb-3 font-light tracking-wide"
+            className="text-lg md:text-xl text-[#C5C6C7] mb-4 font-light tracking-wide"
             data-testid="text-hero-subheadline"
           >
             Sharp Cuts. Elite Detail. No Compromises.
           </motion.p>
+
+          {/* Walk-ins badge */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: 0.45 }}
+            className="inline-flex items-center gap-2 bg-[#C5A059]/15 border border-[#C5A059]/50 rounded-full px-5 py-2 mb-4"
+            data-testid="text-hero-walkins"
+          >
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+            <span className="text-[#C5A059] font-bold text-xs tracking-widest uppercase">
+              Walk-Ins Only — No Appointment Needed
+            </span>
+          </motion.div>
 
           {/* Social proof badge */}
           <motion.div
@@ -90,30 +97,29 @@ export function Hero({ onOpenBooking }: Props) {
             <span className="text-[#C5C6C7] text-xs">52 Google Reviews</span>
           </motion.div>
 
-          {/* CTAs */}
+          {/* CTA */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <button
-              onClick={onOpenBooking}
-              data-testid="button-hero-book"
-              className="flex items-center justify-center gap-2 bg-[#C5A059] text-black font-bold px-8 py-4 rounded-md shadow-lg shadow-[#C5A059]/20 hover:bg-[#b38f4b] hover:scale-[1.02] active:scale-[0.98] transition-all duration-150 w-full sm:w-auto text-base"
-            >
-              <Calendar className="w-4 h-4 shrink-0" />
-              Book Now
-            </button>
             <a
               href="tel:+61431552770"
-              data-testid="button-call-to-book"
+              data-testid="button-check-wait-times"
               aria-label="Call Sileshi Barbershop directly to check wait times"
-              className="flex items-center justify-center gap-2 border border-white/20 bg-white/5 backdrop-blur-sm text-white px-8 py-4 rounded-md hover:bg-white/10 hover:scale-[1.02] active:scale-[0.98] transition-all duration-150 w-full sm:w-auto text-base font-semibold"
+              className="flex items-center justify-center gap-2 bg-[#C5A059] text-black font-bold px-8 py-4 rounded-md shadow-lg shadow-[#C5A059]/20 hover:bg-[#b38f4b] hover:scale-[1.02] active:scale-[0.98] transition-all duration-150 w-full sm:w-auto text-base"
             >
               <Phone className="w-4 h-4 shrink-0" />
-              Call 0431 552 770
+              Check Wait Times — 0431 552 770
             </a>
+            <button
+              onClick={() => scrollTo("services")}
+              data-testid="button-view-services"
+              className="border border-white/20 bg-white/5 backdrop-blur-sm text-white px-8 py-4 rounded-md hover:bg-white/10 hover:scale-[1.02] active:scale-[0.98] transition-all duration-150 text-center w-full sm:w-auto text-base font-semibold"
+            >
+              View Services &amp; Pricing
+            </button>
           </motion.div>
         </motion.div>
 

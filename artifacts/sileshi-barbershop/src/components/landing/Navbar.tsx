@@ -1,12 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Phone, Calendar } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 
-interface Props {
-  onOpenBooking: () => void;
-}
-
-export function Navbar({ onOpenBooking }: Props) {
+export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
@@ -14,7 +10,7 @@ export function Navbar({ onOpenBooking }: Props) {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
-      const sections = ["hero", "services", "about", "reviews", "location"];
+      const sections = ["hero", "services", "about", "gallery", "reviews", "location"];
       const current = sections.find((section) => {
         const el = document.getElementById(section);
         if (el) {
@@ -25,7 +21,6 @@ export function Navbar({ onOpenBooking }: Props) {
       });
       if (current) setActiveSection(current);
     };
-
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
@@ -39,7 +34,7 @@ export function Navbar({ onOpenBooking }: Props) {
 
   const navLinks = [
     { name: "Services", id: "services" },
-    { name: "About", id: "about" },
+    { name: "Gallery", id: "gallery" },
     { name: "Reviews", id: "reviews" },
     { name: "Location", id: "location" },
   ];
@@ -52,10 +47,8 @@ export function Navbar({ onOpenBooking }: Props) {
           : "bg-transparent"
       }`}
     >
-      {/* Single strict-height row */}
       <div className="flex items-center justify-between h-14 px-4 md:px-6 w-full container mx-auto">
-
-        {/* Brand — single line, scales down on mobile */}
+        {/* Brand */}
         <button
           onClick={() => scrollTo("hero")}
           data-testid="button-nav-logo"
@@ -78,35 +71,27 @@ export function Navbar({ onOpenBooking }: Props) {
               {link.name}
             </button>
           ))}
-          <button
-            onClick={onOpenBooking}
-            data-testid="button-nav-book"
-            className="flex items-center gap-2 bg-[#C5A059] text-black font-bold px-5 py-2.5 rounded-md hover:bg-[#b38f4b] hover:scale-[1.02] active:scale-[0.98] transition-all duration-150 text-sm shadow-lg shadow-[#C5A059]/20"
-          >
-            <Calendar className="w-4 h-4" />
-            Book Now
-          </button>
           <a
             href="tel:+61431552770"
             data-testid="link-nav-phone"
-            aria-label="Call Sileshi Barbershop"
-            className="flex items-center gap-2 border border-[#C5A059] text-[#C5A059] font-semibold px-4 py-2.5 rounded-md hover:bg-[#C5A059]/10 transition-all text-sm"
+            aria-label="Call Sileshi Barbershop to check wait times"
+            className="flex items-center gap-2 bg-[#C5A059] text-black font-bold px-5 py-2.5 rounded-md hover:bg-[#b38f4b] hover:scale-[1.02] active:scale-[0.98] transition-all duration-150 text-sm shadow-lg shadow-[#C5A059]/20"
           >
             <Phone className="w-4 h-4" />
-            0431 552 770
+            Check Wait Times
           </a>
         </nav>
 
-        {/* Mobile controls — Book + Hamburger only */}
+        {/* Mobile controls — Phone icon + Hamburger */}
         <div className="flex items-center gap-2 md:hidden z-50">
-          <button
-            onClick={onOpenBooking}
-            data-testid="button-nav-book-mobile"
-            className="flex items-center gap-1.5 bg-[#C5A059] text-black font-bold h-9 px-4 rounded-md text-xs hover:bg-[#b38f4b] active:scale-[0.97] transition-all"
+          <a
+            href="tel:+61431552770"
+            data-testid="link-nav-phone-mobile"
+            aria-label="Call Sileshi Barbershop"
+            className="flex items-center justify-center bg-[#C5A059] text-black h-9 w-9 rounded-md hover:bg-[#b38f4b] active:scale-[0.97] transition-all"
           >
-            <Calendar className="w-3.5 h-3.5" />
-            Book
-          </button>
+            <Phone className="w-4 h-4" />
+          </a>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             data-testid="button-nav-hamburger"
@@ -144,7 +129,7 @@ export function Navbar({ onOpenBooking }: Props) {
               className="flex items-center gap-2 text-[#C5A059] font-semibold py-3 text-sm mt-1"
             >
               <Phone className="w-4 h-4" />
-              Call 0431 552 770
+              0431 552 770 — Check Wait Times
             </a>
           </motion.div>
         )}
