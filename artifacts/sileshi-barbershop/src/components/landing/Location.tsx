@@ -25,110 +25,128 @@ export function Location() {
   return (
     <section
       id="location"
-      className="py-24 bg-[#0B0C10] border-t border-[#C5A059]/20"
+      className="pt-10 md:pt-16 pb-0 bg-[#0B0C10] relative overflow-hidden"
     >
-      <div className="container mx-auto px-4 md:px-6">
+      {/* Ambient radial glow */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(ellipse 60% 40% at 50% 100%, rgba(197,160,89,0.05) 0%, transparent 70%)",
+        }}
+      />
+
+      <div className="container relative mx-auto px-4 md:px-6">
         {/* Section header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-14"
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.45 }}
+          className="text-center mb-8 md:mb-10"
         >
-          <span className="block text-[#C5A059] tracking-widest text-xs uppercase mb-2 font-semibold">
+          <span className="block text-[#C5A059] tracking-widest text-[11px] uppercase mb-2 font-semibold">
             Find Us
           </span>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white">
+          <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
             Location &amp; Hours
           </h2>
         </motion.div>
 
-        {/* Two-column grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        {/* Mobile: Map first, then hours below */}
+        {/* Desktop: two columns side-by-side */}
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
 
-          {/* Left column — access & hours card */}
+          {/* Map — shown first on mobile */}
           <motion.div
-            initial={{ opacity: 0, x: -24 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.55 }}
-            className="bg-[#1F2833] p-8 rounded-2xl border border-white/5 shadow-xl flex flex-col gap-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="order-1 lg:order-2 overflow-hidden rounded-xl border border-white/10 h-48 md:h-64 lg:h-full lg:min-h-[360px] shadow-xl relative"
           >
-            {/* Title */}
-            <div className="flex items-center gap-3">
-              <MapPin className="w-5 h-5 text-[#C5A059] shrink-0" />
-              <h3 className="text-white font-bold text-xl">Visit the Shop</h3>
-            </div>
+            <div className="absolute inset-0 bg-[#0B0C10]/20 pointer-events-none z-10 transition-opacity duration-500 hover:opacity-0" />
+            <iframe
+              src="https://maps.google.com/maps?q=151%20Trugo%20La,%20Footscray%20VIC%203011&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0, filter: "grayscale(80%) contrast(1.1) brightness(0.7)" }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Sileshi Barbershop location map"
+              className="absolute inset-0 w-full h-full"
+            />
+          </motion.div>
 
+          {/* Info card — shown below map on mobile */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.5 }}
+            className="order-2 lg:order-1 bg-white/[0.02] backdrop-blur-md border border-white/5 p-6 rounded-xl flex flex-col gap-5"
+          >
             {/* Address */}
-            <div>
-              <p className="text-2xl font-black text-white leading-snug">
-                151 Trugo La,
-              </p>
-              <p className="text-2xl font-black text-white leading-snug">
-                Footscray VIC 3011
-              </p>
-              <a
-                href="tel:+61431552770"
-                data-testid="link-location-phone"
-                className="inline-flex items-center gap-2 mt-2 text-[#C5A059] hover:text-[#d4b472] transition-colors text-sm font-medium"
-              >
-                <Phone className="w-3.5 h-3.5" />
-                0431 552 770
-              </a>
+            <div className="flex items-start gap-3">
+              <MapPin className="w-4 h-4 text-[#C5A059] shrink-0 mt-0.5" />
+              <div>
+                <p className="text-white font-black text-xl leading-snug">
+                  151 Trugo La,<br />Footscray VIC 3011
+                </p>
+                <a
+                  href="tel:+61431552770"
+                  data-testid="link-location-phone"
+                  className="inline-flex items-center gap-1.5 mt-1.5 text-[#C5A059] hover:text-[#d4b472] transition-colors text-sm font-medium"
+                >
+                  <Phone className="w-3.5 h-3.5" />
+                  0431 552 770
+                </a>
+              </div>
             </div>
 
-            {/* Directions button */}
+            {/* Directions */}
             <a
               href="https://www.google.com/maps/dir/?api=1&destination=151+Trugo+La+Footscray+VIC+3011"
               target="_blank"
               rel="noopener noreferrer"
               data-testid="button-get-directions"
-              className="flex items-center justify-center gap-2 bg-white/5 border border-white/10 text-white py-3 px-6 rounded-md hover:bg-white/10 transition-all text-sm font-semibold"
+              className="flex items-center justify-center gap-2 bg-white/5 border border-white/10 text-white py-2.5 px-5 rounded-md hover:bg-white/10 transition-all text-sm font-semibold"
             >
               <Navigation className="w-4 h-4 text-[#C5A059]" />
               Get Driving Directions
             </a>
 
-            {/* Hours table */}
+            {/* Compact hours table */}
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Clock className="w-4 h-4 text-[#C5A059]" />
-                <span className="text-white font-semibold text-sm uppercase tracking-widest">
+              <div className="flex items-center gap-2 mb-2">
+                <Clock className="w-3.5 h-3.5 text-[#C5A059]" />
+                <span className="text-white/60 font-semibold text-[10px] uppercase tracking-widest">
                   Trading Hours
                 </span>
               </div>
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col divide-y divide-white/5">
                 {hours.map((row) => {
                   const isToday = row.day === today;
                   return (
                     <div
                       key={row.day}
                       data-testid={`row-hours-${row.day.toLowerCase()}`}
-                      className={`flex items-center justify-between py-2 px-3 rounded-lg text-sm transition-colors ${
+                      className={`flex items-center justify-between py-1.5 px-2 text-sm rounded-md transition-colors ${
                         isToday
-                          ? "bg-[#C5A059]/10 border border-[#C5A059]/30"
-                          : "hover:bg-white/5"
+                          ? "bg-[#C5A059]/8 text-[#C5A059]"
+                          : "text-[#C5C6C7]/70"
                       }`}
                     >
-                      <span
-                        className={`font-medium ${
-                          isToday ? "text-[#C5A059]" : "text-[#C5C6C7]"
-                        }`}
-                      >
+                      <span className={`font-medium text-xs ${isToday ? "text-[#C5A059]" : ""}`}>
                         {row.day}
                         {isToday && (
-                          <span className="ml-2 text-[10px] font-bold uppercase tracking-widest text-[#C5A059]">
+                          <span className="ml-2 text-[9px] font-bold uppercase tracking-widest opacity-80">
                             Today
                           </span>
                         )}
                       </span>
-                      <span
-                        className={`font-semibold tabular-nums ${
-                          isToday ? "text-white" : "text-[#C5C6C7]"
-                        }`}
-                      >
+                      <span className={`font-semibold tabular-nums text-xs ${isToday ? "text-white" : ""}`}>
                         {row.open} – {row.close}
                       </span>
                     </div>
@@ -136,29 +154,6 @@ export function Location() {
                 })}
               </div>
             </div>
-          </motion.div>
-
-          {/* Right column — map embed */}
-          <motion.div
-            initial={{ opacity: 0, x: 24 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.55, delay: 0.15 }}
-            className="overflow-hidden rounded-2xl border border-white/10 h-[350px] lg:h-full min-h-[350px] shadow-2xl relative"
-          >
-            {/* Subtle dark tint overlay that fades on hover */}
-            <div className="absolute inset-0 bg-[#0B0C10]/25 pointer-events-none z-10 transition-opacity duration-500 hover:opacity-0" />
-            <iframe
-              src="https://maps.google.com/maps?q=151%20Trugo%20La,%20Footscray%20VIC%203011&t=&z=15&ie=UTF8&iwloc=&output=embed"
-              width="100%"
-              height="100%"
-              style={{ border: 0, filter: "grayscale(80%) contrast(1.1) brightness(0.75)" }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Sileshi Barbershop location map"
-              className="absolute inset-0 w-full h-full"
-            />
           </motion.div>
 
         </div>

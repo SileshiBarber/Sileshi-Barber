@@ -1,0 +1,37 @@
+<ReplitPrompt>
+### Objective
+Completely re-architect the visual flow, layout density, and interface transitions of the entire website to replace the rigid, boxy look with a fluid, premium, high-converting agency-grade experience. Eliminate structural fragments, tighten vertical spacing for mobile, and inject modern design continuity.
+
+### Target Files
+- Modify `/index.html` (Complete layout structure overhaul)
+- Modify `/css/styles.css` (Inject smooth ambient lighting effects, modern gradients, and global padding variables)
+- Modify `/js/app.js` (Verify smooth layout scrolling)
+
+### 1. Global Visual Continuity & Canvas Overhaul (`/css/styles.css`)
+- **Eliminate Separator Lines:** Remove harsh horizontal borders or artificial dividing rules between sections.
+- **Unified Background Gradients:** Instead of solid block backgrounds alternating between light and dark, use a continuous dark canvas. Apply soft, ambient gold radial glows (`bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#1F2833]/30 via-[#0B0C10] to-[#0B0C10]`) behind the content sections to organically connect the page flows.
+- **Tighten Padding Ecosystem:** Change massive vertical padding blocks from `py-20` / `py-24` down to an elegant, mobile-dense scale: `py-10 md:py-16`.
+
+### 2. Layout Section Sequence & Content Structural Overhaul
+
+#### Section 1: Hero Transition to Slideshow
+- **The Visual Hook:** The Landing Hero must flow directly into the Photo Slideshow with zero harsh breaks. 
+- Eliminate the isolated white section title over the slideshow. Integrate the slideshow container directly into a single continuous stream immediately following the Hero's primary call-to-action cards.
+- Give the slideshow a premium border-radius (`rounded-2xl`), subtle gold neon outer glow (`shadow-[0_0_15px_rgba(197,160,89,0.1)]`), and scale its max-height slightly on mobile so it doesn't consume the entire vertical viewport.
+
+#### Section 2: Streamlined Menu Section
+- Remove the redundant "Walk-Ins Only" gold capsule wrapper if it is repeated. 
+- Clean up the pricing line lists: use a much more subtle, muted gray color for the dotted connector tracking lines (`border-white/10`) to make sure the item text and gold prices stand out. 
+- Tighten the gap between the "Haircuts" category grid and the "Beard & Detailing" block so it functions as a single, intuitive multi-column dashboard.
+
+#### Section 3: Clean Testimonials & Social Proof
+- Eliminate the massive individual gold stars header. 
+- Style the customer reviews as clean, sleek, minimal glass cards (`bg-white/[0.02] backdrop-blur-md border border-white/5 p-5 rounded-xl`) floating seamlessly over the background gradient. 
+- Reduce the main testimonial headings from generic giant white text to a sophisticated font tracking layout (`tracking-tight text-2xl`).
+
+#### Section 4: Location, Hours & Consolidated Footer
+- Merge the "Location & Hours" section fluidly with the Footer area to avoid two back-to-back black blocks.
+- **Layout:** On mobile, display the Map first as a modern, wide-view element (`rounded-xl h-48`), followed right below by a highly clean, compact tabular operational schedule.
+
+Execute this comprehensive flow repair immediately. The entire site must feel like an elegant, continuous scroll with seamless spatial density and professional typographic hierarchy.
+</ReplitPrompt>

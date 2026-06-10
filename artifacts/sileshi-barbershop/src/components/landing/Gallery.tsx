@@ -30,14 +30,12 @@ export function Gallery() {
   const prev = () => go(current - 1, -1);
   const next = useCallback(() => go(current + 1, 1), [current, go]);
 
-  // Auto-play
   useEffect(() => {
     if (paused) return;
     const id = setInterval(next, 4000);
     return () => clearInterval(id);
   }, [paused, next]);
 
-  // Touch / swipe
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;
     touchStartY.current = e.touches[0].clientY;
@@ -46,9 +44,7 @@ export function Gallery() {
     if (touchStartX.current === null || touchStartY.current === null) return;
     const dx = e.changedTouches[0].clientX - touchStartX.current;
     const dy = e.changedTouches[0].clientY - touchStartY.current;
-    if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
-      dx < 0 ? next() : prev();
-    }
+    if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) dx < 0 ? next() : prev();
     touchStartX.current = null;
     touchStartY.current = null;
   };
@@ -56,29 +52,12 @@ export function Gallery() {
   const variants = {
     enter: (dir: number) => ({ x: dir > 0 ? "100%" : "-100%", opacity: 0 }),
     center: { x: 0, opacity: 1 },
-    exit: (dir: number) => ({ x: dir > 0 ? "-100%" : "100%", opacity: 0 }),
+    exit:  (dir: number) => ({ x: dir > 0 ? "-100%" : "100%", opacity: 0 }),
   };
 
   return (
-    <section id="gallery" className="py-24 bg-[#1F2833]">
+    <section id="gallery" className="py-10 md:py-16 bg-[#0B0C10]">
       <div className="container mx-auto px-4 md:px-6">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-10"
-        >
-          <span className="block text-[#C5A059] tracking-widest text-xs uppercase mb-2 font-semibold">
-            Our Craft Visualized
-          </span>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white">
-            Fresh Fades &amp; Elite Precision
-          </h2>
-        </motion.div>
-
-        {/* Slideshow */}
         <div
           className="relative max-w-3xl mx-auto select-none"
           onMouseEnter={() => setPaused(true)}
@@ -86,10 +65,13 @@ export function Gallery() {
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
         >
-          {/* Image frame */}
+          {/* Slideshow frame — gold glow + border-radius */}
           <div
-            className="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-[#0B0C10]"
-            style={{ paddingTop: "75%" }}
+            className="relative overflow-hidden rounded-2xl border border-white/10 bg-[#0B0C10]"
+            style={{
+              paddingTop: "70%",
+              boxShadow: "0 0 40px rgba(197,160,89,0.12), 0 0 0 1px rgba(197,160,89,0.06)",
+            }}
           >
             <AnimatePresence custom={direction} initial={false}>
               <motion.img
@@ -101,20 +83,20 @@ export function Gallery() {
                 initial="enter"
                 animate="center"
                 exit="exit"
-                transition={{ duration: 0.45, ease: "easeInOut" }}
+                transition={{ duration: 0.42, ease: "easeInOut" }}
                 className="absolute inset-0 w-full h-full object-cover"
                 draggable={false}
               />
             </AnimatePresence>
 
-            {/* Caption overlay */}
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0B0C10]/80 to-transparent px-6 py-5 pointer-events-none">
-              <p className="text-[#C5A059] text-xs font-bold uppercase tracking-widest">
+            {/* Caption */}
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0B0C10]/85 to-transparent px-6 py-5 pointer-events-none">
+              <p className="text-[#C5A059] text-[11px] font-bold uppercase tracking-widest">
                 {images[current].label}
               </p>
             </div>
 
-            {/* Prev arrow */}
+            {/* Arrows */}
             <button
               onClick={prev}
               aria-label="Previous photo"
@@ -122,8 +104,6 @@ export function Gallery() {
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
-
-            {/* Next arrow */}
             <button
               onClick={next}
               aria-label="Next photo"
@@ -134,7 +114,7 @@ export function Gallery() {
           </div>
 
           {/* Dot indicators */}
-          <div className="flex justify-center gap-2 mt-5">
+          <div className="flex justify-center gap-2 mt-4">
             {images.map((_, i) => (
               <button
                 key={i}
@@ -149,16 +129,10 @@ export function Gallery() {
             ))}
           </div>
 
-          {/* Counter */}
-          <p className="text-center text-[#C5C6C7]/40 text-xs mt-3 tracking-widest">
+          <p className="text-center text-[#C5C6C7]/30 text-[11px] mt-2 tracking-widest">
             {current + 1} / {images.length}
           </p>
         </div>
-      </div>
-
-      {/* Gold divider into Services */}
-      <div className="mt-16 mx-auto max-w-3xl px-4 md:px-6">
-        <div className="h-px bg-gradient-to-r from-transparent via-[#C5A059]/60 to-transparent" />
       </div>
     </section>
   );
