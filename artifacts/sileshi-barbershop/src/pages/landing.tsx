@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/landing/Navbar";
 import { StatusBanner } from "@/components/landing/StatusBanner";
 import { Hero } from "@/components/landing/Hero";
+import { Storefront } from "@/components/landing/Storefront";
 import { Gallery } from "@/components/landing/Gallery";
 import { Services } from "@/components/landing/Services";
 import { Reviews } from "@/components/landing/Reviews";
@@ -14,6 +15,7 @@ export default function LandingPage() {
       <StatusBanner />
       <main className="flex-1">
         <Hero />
+        <Storefront />
         <Gallery />
         <Services />
         <Reviews />
