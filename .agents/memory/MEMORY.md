@@ -1,0 +1,1 @@
+- [Vercel static frontend from pnpm monorepo](vercel-monorepo-static-deploy.md) — failed Vercel builds keep serving the last successful deploy (stale serverless 500s); decouple frontend from backend workspace deps, framework:null, clear build cache.

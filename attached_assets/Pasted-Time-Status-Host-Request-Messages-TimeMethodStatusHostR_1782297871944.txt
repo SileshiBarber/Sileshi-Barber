@@ -1,0 +1,157 @@
+Time
+Status
+Host
+Request
+Messages
+TimeMethodStatusHostRequestMessage
+Jun 24 20:41:47.95
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/favicon.png
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:41:46.08
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/favicon.png
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:41:45.72
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/favicon.png
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:41:44.82
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/favicon.png
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:41:44.61
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/favicon.ico
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:41:44.45
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/favicon.png
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:41:44.19
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/favicon.ico
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:41:42.32
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/favicon.ico
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:41:41.87
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/favicon.ico
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:41:41.00
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/favicon.ico
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:41:40.64
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:41:40.45
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/favicon.ico
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:41:40.17
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:41:39.31
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:41:39.19
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:41:38.95
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:41:38.81
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:41:13.39
+GET
+500
+sileshibarber.vercel.app
+/favicon.ico
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:41:11.86
+GET
+500
+sileshibarber.vercel.app
+/
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:40:31.28
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/favicon.ico
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:40:30.79
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:40:30.75
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/favicon.ico
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:40:30.37
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:40:29.87
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Jun 24 20:40:29.83
+GET
+500
+sileshibarber-24j3vx0b7-sileshibarbers-projects.vercel.app
+/
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue. Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/var/task/artifacts/api-server/src/routes' is not supported resolving ES modules imported from /var/task/artifacts/api-server/src/app.js at finalizeResolution (node:internal/modules/esm/resolve:269:11) at moduleResolve (node:internal/modules/esm/resolve:871:10) at moduleResolveWithNodePath (node:internal/modules/esm/resolve:997:14) at defaultResolve (node:internal/modules/esm/resolve:1040:79) at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20) at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38) at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52) at #resolve (node:internal/modules/esm/loader:701:17) at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35) at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) { code: 'ERR_UNSUPPORTED_DIR_IMPORT', url: 'file:///var/task/artifacts/api-server/src/routes' } Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+No more logs to show within selected timeline
