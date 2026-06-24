@@ -84,6 +84,16 @@ export function Footer() {
           <p>&copy; {currentYear} Sileshi Barbershop. All rights reserved.</p>
           <p>151 Trugo La, Footscray VIC 3011</p>
         </div>
+        <p className="mt-2 text-center text-[11px] font-light tracking-wider text-[#C5C6C7]/20">
+          <a
+            href="https://www.tykieautomation.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "inherit", textDecoration: "none", cursor: "default" }}
+          >
+            Powered by TykieAutomation
+          </a>
+        </p>
       </div>
     </footer>
   );

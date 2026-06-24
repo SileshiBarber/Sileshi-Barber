@@ -1,5 +1,5 @@
 {
-  "visits": 13,
+  "visits": 16,
   "events": [
     {
       "event": "page_view",
@@ -77,6 +77,24 @@
       "event": "page_view",
       "ts": 1781249331192,
       "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.7.5 Mobile/15E148 Safari/604.1",
+      "ref": "https://c2ab3ffe-1cb3-4f9a-b897-bf0efa073a99-00-x94mr9bc5sw0.janeway.replit.dev/"
+    },
+    {
+      "event": "page_view",
+      "ts": 1782120730618,
+      "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.7.5 Mobile/15E148 Safari/604.1",
+      "ref": "https://c2ab3ffe-1cb3-4f9a-b897-bf0efa073a99-00-x94mr9bc5sw0.janeway.replit.dev/"
+    },
+    {
+      "event": "page_view",
+      "ts": 1782120738016,
+      "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.7.5 Mobile/15E148 Safari/604.1",
+      "ref": "https://c2ab3ffe-1cb3-4f9a-b897-bf0efa073a99-00-x94mr9bc5sw0.janeway.replit.dev/"
+    },
+    {
+      "event": "page_view",
+      "ts": 1782283417869,
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
       "ref": "https://c2ab3ffe-1cb3-4f9a-b897-bf0efa073a99-00-x94mr9bc5sw0.janeway.replit.dev/"
     }
   ],
