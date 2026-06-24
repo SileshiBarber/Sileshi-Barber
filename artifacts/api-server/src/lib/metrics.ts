@@ -2,7 +2,9 @@ import fs from "fs";
 import path from "path";
 import { logger } from "./logger.js";
 
-const DATA_DIR = path.resolve(process.cwd(), "data");
+const DATA_DIR = process.env.VERCEL
+  ? path.join("/tmp", "sileshi-data")
+  : path.resolve(process.cwd(), "data");
 const METRICS_FILE = path.join(DATA_DIR, "metrics.json");
 
 export interface EventEntry {
