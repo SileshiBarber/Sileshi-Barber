@@ -1,0 +1,54 @@
+Ah, this is a classic TypeScript configuration and import mismatch between how the Replit development environment runs your JavaScript/TypeScript compared to Vercel's strict, zero-warning production build machine.
+
+Vercel is throwing two flags during compilation:
+
+1. **`pino-http` has no call signatures:** The compiler is choking on how the automated analytics logger is imported.
+2. **Implicit `any` types:** Vercel requires types for the Express `req` and `res` parameters.
+
+Feed this clean-up fix directly back to your **Replit Agent** to instantly align the backend code with Vercel's strict compiler rules:
+
+```xml
+<ReplitPrompt>
+### Objective
+Fix the TypeScript compilation errors blocking the Vercel production deployment build. Adjust the `pino-http` import syntax and provide explicit typings for Express middleware parameters in `src/app.ts`.
+
+### Target Files
+- Modify `/src/app.ts`
+
+### Code Adjustments to Implement
+1. **Fix pino-http Import Syntax:** 
+   Change the import of `pino-http` to handle standard modern ESM compatibility correctly. If it looks like `import pinoHttp from 'pino-http'`, change it to use the destructured or star assignment structure depending on how it's handled, or import it cleanly like:
+```typescript
+   import { pinoHttp } from 'pino-http';
+
+```
+
+*(Alternatively, if it is imported as a default, ensure `import pinoHttp = require('pino-http')` or explicit resolution is used to eliminate the "no call signatures" error).*
+
+2. **Add Explicit Express Typings:**
+Import `Request` and `Response` types directly from `express`:
+
+```typescript
+   import { Request, Response, NextFunction } from 'express';
+
+```
+
+Locate line 13 and line 20 where `req` and `res` are referenced, and add explicit types to silence the `implicit any` errors:
+
+```typescript
+   (req: Request, res: Response, next: NextFunction) => { ... }
+
+```
+
+Verify the files are written cleanly. Once completed, push the commit back to GitHub to trigger Vercel's automatic rebuild.
+
+
+```
+
+### Why this clears the roadblock:
+* **Import Fix:** `pino-http` exports its type definition a bit uniquely in newer versions. Destructuring or utilizing named imports (`{ pinoHttp }`) ensures TypeScript recognizes it as a directly executable function.
+* **Typing Fix:** By changing `(req, res)` to `(req: Request, res: Response)`, Vercel's engine immediately passes the build phase safely because nothing is left to implicit guesswork. 
+
+Once your Replit Agent applies this, commit the new changes to GitHub, and Vercel will instantly flip to green!
+
+```
